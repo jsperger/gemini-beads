@@ -1,0 +1,10 @@
+description = "Restore history of compacted issue"
+prompt = """
+Restore full history of a compacted issue from git.
+
+Usage:
+- Restore: `bd restore <issue-id>`
+
+Arguments: {{args}}
+Use `run_shell_command` to execute `bd restore {{args}}`.
+"""

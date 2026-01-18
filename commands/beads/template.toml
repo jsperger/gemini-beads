@@ -1,0 +1,12 @@
+description = "Manage issue templates"
+prompt = """
+Manage issue templates.
+
+Usage:
+- List: `bd template list`
+- Show: `bd template show <name>`
+- Create: `bd template create <name>`
+
+Arguments: {{args}}
+Use `run_shell_command` to execute `bd template {{args}}`.
+"""

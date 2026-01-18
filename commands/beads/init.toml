@@ -1,0 +1,11 @@
+description = "Initialize beads in the current project"
+prompt = """
+Initialize beads issue tracking in the current directory.
+
+Usage:
+- Default: `bd init`
+- With prefix: `bd init <prefix>`
+
+Arguments: {{args}}
+Use `run_shell_command` to execute `bd init {{args}}`.
+"""

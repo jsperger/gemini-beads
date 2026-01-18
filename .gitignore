@@ -1,0 +1,12 @@
+# System
+.DS_Store
+Thumbs.db
+
+# Gemini
+.gemini/
+.gemini_security/
+
+# Editors
+.vscode/
+.idea/
+*.swp

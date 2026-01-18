@@ -1,0 +1,13 @@
+description = "Manage dependencies between issues"
+prompt = """
+Manage dependencies (blocks, related, parent-child).
+
+Usage:
+- Add dependency: `bd dep add <from-id> <to-id> --type <type>`
+- Remove dependency: `bd dep remove <from-id> <to-id>`
+- Show tree: `bd dep tree <id>`
+- Detect cycles: `bd dep cycles`
+
+Arguments: {{args}}
+Use `run_shell_command` to execute `bd dep {{args}}`.
+"""

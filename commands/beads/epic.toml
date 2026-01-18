@@ -1,0 +1,11 @@
+description = "Epic management commands"
+prompt = """
+Manage epics (large features composed of multiple issues).
+
+Usage:
+- Show status: `bd epic status`
+- Close eligible epics: `bd epic close-eligible`
+
+Arguments: {{args}}
+Use `run_shell_command` to execute `bd epic {{args}}`.
+"""

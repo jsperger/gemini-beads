@@ -1,0 +1,10 @@
+description = "Find ready-to-work tasks"
+prompt = """
+Find tasks that are ready to work on (no blocking dependencies).
+
+Usage:
+- Show ready tasks: `bd ready`
+
+Arguments: {{args}}
+Use `run_shell_command` to execute `bd ready {{args}}`.
+"""

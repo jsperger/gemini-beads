@@ -1,0 +1,13 @@
+description = "Compact old closed issues using semantic summarization"
+prompt = """
+Reduce database size by summarizing closed issues no longer actively referenced.
+
+Usage:
+- Preview: `bd admin compact --dry-run`
+- Compact all: `bd admin compact --all`
+- Compact specific: `bd admin compact --id <issue-id>`
+
+Arguments: {{args}}
+
+Use `run_shell_command` to execute `bd admin compact {{args}}`.
+"""

@@ -1,0 +1,12 @@
+description = "Reopen closed issues"
+prompt = """
+Reopen one or more closed issues.
+
+Usage:
+- Single: `bd reopen <id>`
+- Multiple: `bd reopen <id1> <id2>`
+- With reason: `bd reopen <id> --reason "..."`
+
+Arguments: {{args}}
+Use `run_shell_command` to execute `bd reopen {{args}}`.
+"""

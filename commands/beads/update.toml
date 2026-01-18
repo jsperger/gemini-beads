@@ -1,0 +1,7 @@
+description = "Update an issue"
+prompt = """
+Update a beads issue.
+Arguments: {{args}}
+
+Use `run_shell_command` to execute `bd update {{args}}`.
+"""

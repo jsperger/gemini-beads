@@ -1,0 +1,11 @@
+description = "Search issues by text query"
+prompt = """
+Search issues by text query.
+
+Usage:
+- Search: `bd search "query"`
+- Filter: `bd search "query" --status open`
+
+Arguments: {{args}}
+Use `run_shell_command` to execute `bd search {{args}}`.
+"""

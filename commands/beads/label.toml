@@ -1,0 +1,13 @@
+description = "Manage issue labels"
+prompt = """
+Manage labels on beads issues.
+
+Usage:
+- Add: `bd label add <issue-id> <label>`
+- Remove: `bd label remove <issue-id> <label>`
+- List (issue): `bd label list <issue-id>`
+- List all: `bd label list-all`
+
+Arguments: {{args}}
+Use `run_shell_command` to execute `bd label {{args}}`.
+"""

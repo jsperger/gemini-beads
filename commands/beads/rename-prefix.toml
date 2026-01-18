@@ -1,0 +1,11 @@
+description = "Rename the issue prefix"
+prompt = """
+Rename the issue prefix for all issues in the database.
+
+Usage:
+- Preview: `bd rename-prefix <new-prefix> --dry-run`
+- Apply: `bd rename-prefix <new-prefix>`
+
+Arguments: {{args}}
+Use `run_shell_command` to execute `bd rename-prefix {{args}}`.
+"""

@@ -1,0 +1,12 @@
+description = "View or manage comments on an issue"
+prompt = """
+View or add comments to a beads issue.
+
+Usage:
+- View comments: `bd comments <issue-id>`
+- Add comment: `bd comments add <issue-id> "comment text"`
+
+Arguments: {{args}}
+
+Use `run_shell_command` to execute `bd comments {{args}}`.
+"""

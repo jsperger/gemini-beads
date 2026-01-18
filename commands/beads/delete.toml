@@ -1,0 +1,11 @@
+description = "Delete issues and cleanup references"
+prompt = """
+Delete one or more issues and clean up all references.
+
+Usage:
+- Delete issues: `bd delete <id1> <id2> ...`
+- Force delete (cascade): `bd delete <id> --cascade`
+
+Arguments: {{args}}
+Use `run_shell_command` to execute `bd delete {{args}}`.
+"""

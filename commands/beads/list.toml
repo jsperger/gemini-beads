@@ -1,0 +1,8 @@
+description = "List issues"
+prompt = """
+List issues in the beads tracker.
+Arguments: {{args}}
+
+Use `run_shell_command` to execute `bd list {{args}}`.
+If no arguments are provided, start with `bd list`.
+"""

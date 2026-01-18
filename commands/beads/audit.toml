@@ -1,0 +1,11 @@
+description = "Log and label agent interactions (append-only JSONL)"
+prompt = """
+Append-only audit logging for agent interactions (prompts, responses, tool calls).
+
+Usage:
+- Record an interaction: `bd audit record --kind llm_call --model "..." --prompt "..." --response "..."`
+- Label an entry: `bd audit label <id> --label good --reason "..."`
+
+Arguments: {{args}}
+Use `run_shell_command` to execute `bd audit {{args}}`.
+"""

@@ -1,0 +1,12 @@
+description = "Manage background sync daemon"
+prompt = """
+Manage the per-project background daemon.
+
+Usage:
+- Start: `bd daemon start`
+- Stop: `bd daemon stop`
+- Status: `bd daemon status`
+
+Arguments: {{args}}
+Use `run_shell_command` to execute `bd daemon {{args}}`.
+"""

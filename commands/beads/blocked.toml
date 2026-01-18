@@ -1,0 +1,7 @@
+description = "Show blocked issues"
+prompt = """
+Show all issues that are blocked by dependencies.
+
+Use `run_shell_command` to execute `bd blocked`.
+This helps identify why work is stuck and what critical path items need attention.
+"""

@@ -1,0 +1,12 @@
+description = "Import issues from JSONL format"
+prompt = """
+Import issues from JSON Lines format.
+
+Usage:
+- From stdin: `bd import`
+- From file: `bd import -i <file>`
+- Preview: `bd import -i <file> --dry-run`
+
+Arguments: {{args}}
+Use `run_shell_command` to execute `bd import {{args}}`.
+"""

@@ -1,0 +1,43 @@
+# Beads - Persistent Task Memory
+
+You have access to **Beads (`bd`)**, a graph-based issue tracker that provides persistent memory for multi-session work.
+
+## Core Mandates for Beads
+
+- **Use `run_shell_command`** to execute `bd` commands.
+- **Source of Truth**: The `bd` tool is the authority. Do not try to parse `.beads/` files manually unless necessary; prefer the CLI.
+- **Persistence**: Always ensure work is tracked in beads so it survives conversation compaction.
+
+## When to use Beads (`bd`)
+
+**YES** - Use `bd` when:
+- Work spans multiple sessions or days.
+- Tasks have dependencies or blockers.
+- You need to recover context after a long break.
+- You are collaborating with a team.
+
+**NO** - Do not use `bd` when:
+- Tasks are strictly linear and single-session.
+- You are just "exploring" without a concrete goal.
+
+## Session Protocol (The Workflow)
+
+1.  **Start**: Run `bd ready` to find unblocked work.
+2.  **Context**: Run `bd show <id>` to get full details for a task.
+3.  **Work**: Run `bd update <id> --status in_progress` to start.
+4.  **Finish**: Run `bd close <id> --reason "..."` when done.
+5.  **Save**: Run `bd sync` at the end of the session to persist changes to git.
+
+## Key Commands
+
+- `bd prime`: Outputs AI-optimized workflow context (Project, User, Recent Issues). **Run this first if you lack context.**
+- `bd create "Title" [type] [priority]`: Create a new issue.
+- `bd list`: List issues (use filters like `--status open`).
+- `bd show <id>`: Show details for a specific issue.
+- `bd comments <id>`: Read comments for an issue.
+- `bd update <id> ...`: Update status, priority, etc.
+
+## Agent Behavior
+
+- **Proactive Tracking**: If the user asks you to work on something substantial, suggest creating a bead for it: "Shall I track this in beads?"
+- **Compaction Recovery**: If the conversation history is lost/compacted, run `bd prime` to re-orient yourself.

@@ -1,0 +1,7 @@
+description = "Quick start guide (deprecated)"
+prompt = """
+Note: `bd quickstart` is deprecated. Please refer to docs/QUICKSTART.md.
+
+Arguments: {{args}}
+Use `run_shell_command` to execute `bd quickstart {{args}}`.
+"""

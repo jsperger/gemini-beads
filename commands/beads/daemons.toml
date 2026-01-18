@@ -1,0 +1,13 @@
+description = "Manage daemons across workspaces"
+prompt = """
+Manage bd daemon processes across all repositories and worktrees.
+
+Usage:
+- List all daemons: `bd daemons list`
+- Check health: `bd daemons health`
+- Stop a daemon: `bd daemons stop <path|pid>`
+- Kill all daemons: `bd daemons killall`
+
+Arguments: {{args}}
+Use `run_shell_command` to execute `bd daemons {{args}}`.
+"""

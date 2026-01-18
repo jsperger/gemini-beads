@@ -1,0 +1,10 @@
+description = "Check beads version"
+prompt = """
+Check the installed versions of beads components.
+
+Usage:
+- Check version: `bd version`
+
+Arguments: {{args}}
+Use `run_shell_command` to execute `bd version {{args}}`.
+"""

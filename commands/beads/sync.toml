@@ -1,0 +1,13 @@
+description = "Synchronize issues with git remote"
+prompt = """
+Synchronize issues with git remote.
+
+Usage:
+- Basic sync: `bd sync`
+- Preview: `bd sync --dry-run`
+- Status: `bd sync --status`
+- Merge: `bd sync --merge`
+
+Arguments: {{args}}
+Use `run_shell_command` to execute `bd sync {{args}}`.
+"""

@@ -1,0 +1,7 @@
+description = "Get AI-optimized context from beads"
+prompt = """
+Run the `bd prime` command and use its output to orient yourself in the current project.
+This provides information about the project, current user, and recent/relevant issues.
+
+!{ bd prime }
+"""

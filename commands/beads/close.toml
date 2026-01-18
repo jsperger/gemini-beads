@@ -1,0 +1,12 @@
+description = "Close a completed issue"
+prompt = """
+Close a beads issue that's been completed.
+
+Arguments: {{args}}
+Expected: `bd close <issue-id> --reason "..."`
+
+If the issue ID or reason is missing, ask the user for them.
+After closing, suggest checking for unblocked issues with `bd ready` or creating new work discovered during the task.
+
+Use `run_shell_command` to execute `bd close {{args}}`.
+"""

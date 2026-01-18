@@ -1,0 +1,12 @@
+description = "Export issues to JSONL format"
+prompt = """
+Export all issues to JSON Lines format (one JSON object per line).
+
+Usage:
+- To stdout: `bd export`
+- To file: `bd export -o <file>`
+- Filter: `bd export --status open`
+
+Arguments: {{args}}
+Use `run_shell_command` to execute `bd export {{args}}`.
+"""

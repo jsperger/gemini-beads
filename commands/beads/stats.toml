@@ -1,0 +1,10 @@
+description = "Show project statistics"
+prompt = """
+Display statistics about the current beads project.
+
+Usage:
+- Show stats: `bd stats`
+
+Arguments: {{args}}
+Use `run_shell_command` to execute `bd stats {{args}}`.
+"""
