@@ -26,22 +26,20 @@ To install this extension with Gemini CLI:
 gemini extension install https://github.com/thoreinstein/gemini-beads
 ```
 
-(Replace the URL with the actual repository URL if different).
-
 ## Usage
 
 Once installed, the `bd` commands are available within Gemini. The extension also provides the `GEMINI.md` context file, which instructs Gemini on how to effectively use Beads to manage your project.
 
 ### Common Commands
 
-- `bd prime`: Load project context (run this when starting a session).
-- `bd ready`: Find unblocked work to do.
-- `bd create`: Create a new issue/bead.
-- `bd list`: List issues.
-- `bd show`: Show details of a specific issue.
-- `bd update`: Update an issue's status or properties.
-- `bd close`: Close an issue.
-- `bd sync`: Sync changes to git.
+- `/beads:prime`: Load project context (run this when starting a session).
+- `/beads:ready`: Find unblocked work to do.
+- `/beads:create`: Create a new issue/bead.
+- `/beads:list`: List issues.
+- `/beads:show`: Show details of a specific issue.
+- `/beads:update`: Update an issue's status or properties.
+- `/beads:close`: Close an issue.
+- `/beads:sync`: Sync changes to git.
 
 ### Full Command List
 
