@@ -1,6 +1,6 @@
 # Gemini Beads Extension
 
-This is a [Gemini CLI](https://github.com/google/gemini-cli) extension for **Beads (`bd`)**, a graph-based issue tracker that provides persistent memory for multi-session work, backed by Git.
+This is a [Gemini CLI](https://github.com/google/gemini-cli) extension for **[Beads (`bd`)](https://github.com/steveyegge/beads)**, a graph-based issue tracker that provides persistent memory for multi-session work, backed by Git.
 
 ## Description
 
