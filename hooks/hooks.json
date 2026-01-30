@@ -1,0 +1,28 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "name": "beads-startup-prime",
+            "type": "command",
+            "command": "${extensionPath}/hooks/bd-prime.sh"
+          }
+        ]
+      }
+    ],
+    "PreCompress": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "name": "beads-pre-compress-prime",
+            "type": "command",
+            "command": "${extensionPath}/hooks/bd-prime.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
